@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    <ScrollView
+    	android:id="@+id/scrollView1"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+        <LinearLayout
+        	android:id="@+id/linearLayout1"
+        	android:orientation="vertical"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent">
+
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/tableLayout0">
+		<TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+			<TextView
+				android:text="Total Home Price ($)"
+				android:id="@+id/textView0"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<TextView
+				android:text="Down Payment (%)"
+				android:id="@+id/textView11"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp">
+			</TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow7" android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<EditText
+				android:layout_width="fill_parent"
+				android:id="@+id/editTextPrice"
+				android:layout_height="wrap_content"
+				android:inputType="phone">
+			</EditText>
+			<EditText android:inputType="phone" android:text="20" android:id="@+id/editTextDownPayment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp"></EditText>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow8" android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<TextView
+				android:text="Fixed Interest (%)"
+				android:id="@+id/textView3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<TextView
+				android:text="Years"
+				android:id="@+id/textView2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp">
+			</TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow9" android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<EditText
+				android:inputType="phone"
+				android:text="4.5"
+				android:id="@+id/editTextInterest"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			</EditText>
+			<EditText
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="30"
+				android:id="@+id/editTextYears"
+				android:inputType="phone"
+				android:layout_marginLeft="10dp">
+			</EditText>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow10" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp">
+			<TextView
+				android:text="Property Tax (%)"
+				android:id="@+id/textView5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<TextView
+				android:text="Appraised Value ($)"
+				android:id="@+id/textView6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp">
+			</TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow11" android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<EditText
+				android:inputType="phone"
+				android:text="1.125"
+				android:id="@+id/editTextPropertyTax"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			</EditText>
+			<EditText
+				android:layout_width="fill_parent"
+				android:id="@+id/editTextAppraised"
+				android:layout_height="wrap_content"
+				android:inputType="phone"
+				android:layout_marginLeft="10dp">
+			</EditText>
+		</TableRow>
+	</TableLayout>
+	<TextView
+		android:text="Monthly Insurance ($)"
+		android:id="@+id/textView13"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	</TextView>
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="60"
+		android:id="@+id/editTextInsurance"
+		android:inputType="phone">
+	</EditText>
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:id="@+id/tableLayout1"
+		android:layout_width="fill_parent">
+		<TableRow
+			android:layout_width="wrap_content"
+			android:id="@+id/tableRow1"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+			<Button android:id="@+id/calculateButton"
+				android:layout_width="wrap_content" android:text="Calculate"
+				android:layout_height="wrap_content"></Button>
+			<Button android:id="@+id/clearButton" android:layout_width="wrap_content"
+				android:text="Clear" android:layout_height="wrap_content"></Button>
+		</TableRow>
+	</TableLayout>
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/tableLayout5">
+		<TableRow android:id="@+id/tableRow99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+			<TextView
+				android:text="Total Monthly Payment:"
+				android:id="@+id/textView4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:textSize="17sp">
+			</TextView>
+			<TextView
+				android:id="@+id/textViewTotal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:textSize="17sp"
+				android:layout_marginLeft="10dp">
+			</TextView>
+		</TableRow>
+	</TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

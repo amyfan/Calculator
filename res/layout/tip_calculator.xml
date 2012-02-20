@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/tableLayout3">
+		<TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+			<TextView android:id="@+id/textView0" android:layout_width="wrap_content" android:text="Bill (Pre-Tax)" android:layout_height="wrap_content"></TextView>
+			<TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:text="Tax (%)" android:layout_width="wrap_content" android:layout_marginLeft="10dp"></TextView>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" android:id="@+id/tableRow4" android:layout_width="wrap_content">
+			<EditText android:inputType="phone" android:id="@+id/editTextBill" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+			<EditText android:inputType="phone" android:text="8.75" android:id="@+id/editTextTax" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp"></EditText>
+		</TableRow>
+	</TableLayout>
+	<TextView
+		android:text="Tip (%)"
+		android:id="@+id/textView3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	</TextView>
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/tableLayout2">
+		<TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:text="  -  " android:id="@+id/buttonDecTip" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<EditText android:inputType="phone" android:text="18" android:layout_height="wrap_content" android:id="@+id/editTextTip" android:layout_width="fill_parent"></EditText>
+			<Button android:text="  +  " android:id="@+id/buttonIncTip" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</TableRow>
+	</TableLayout>
+	<TextView android:text="People Splitting" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/tableLayout4">
+		<TableRow android:id="@+id/tableRow5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Button android:text="  -  " android:id="@+id/buttonDecSplit" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<EditText android:inputType="phone" android:text="1" android:id="@+id/editTextSplit" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+			<Button android:text="  +  " android:id="@+id/buttonIncSplit" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</TableRow>
+	</TableLayout>
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:id="@+id/tableLayout1"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="10dp">
+		<TableRow
+			android:layout_width="wrap_content"
+			android:id="@+id/tableRow1"
+			android:layout_height="wrap_content">
+			<Button android:id="@+id/calculateButton"
+				android:layout_width="wrap_content" android:text="Calculate"
+				android:layout_height="wrap_content"></Button>
+			<Button android:id="@+id/clearButton" android:layout_width="wrap_content"
+				android:text="Clear" android:layout_height="wrap_content"></Button>
+		</TableRow>
+	</TableLayout>
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/tableLayout5">
+		<TableRow android:id="@+id/tableRow99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+			<TextView
+				android:text="Total Bill:"
+				android:id="@+id/textView4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:textSize="17sp">
+			</TextView>
+			<TextView
+				android:id="@+id/textViewTotal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:textSize="17sp"
+				android:layout_marginLeft="10dp">
+			</TextView>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Calculator!</string>
+    <string name="app_name">Financial Calculators</string>
+    <string-array name="calculators_array">
+        <item>Monthly Mortgage</item>
+        <item>Nest Egg (Time Value of Money)</item>
+        <item>Tip</item>
+    </string-array>
+</resources>
