@@ -18,6 +18,10 @@
                   android:label="Nest Egg Calculator">
         </activity>
 
+  	  	<activity android:name="ROICalculator"
+                  android:label="ROI Calculator">
+        </activity>
+
   	  	<activity android:name="TipCalculator"
                   android:label="Tip Calculator">
         </activity>

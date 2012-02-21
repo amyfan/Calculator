@@ -36,6 +36,8 @@ public class Menu extends ListActivity {
       switch (CalculatorType.fromValue(calculatorType)) {
       case MORTGAGE:
         return MortgageCalculator.class;
+      case ROI:
+        return ROICalculator.class;
       case TIP:
         return TipCalculator.class;
       case TVM:

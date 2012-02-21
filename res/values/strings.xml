@@ -5,6 +5,7 @@
     <string-array name="calculators_array">
         <item>Monthly Mortgage</item>
         <item>Nest Egg (Time Value of Money)</item>
+        <item>Return on Investment</item>
         <item>Tip</item>
     </string-array>
 </resources>
