@@ -3,7 +3,7 @@ package com.fanster.calculator;
 import java.util.EnumSet;
 
 public enum CalculatorType {
-  DEBT ("Debt Payoff"), MORTGAGE("Monthly Mortgage"), ROI("Return on Investment"), TVM("Nest Egg (Time Value of Money)"), TIP("Tip");
+  AUTO ("Auto Loan"), CREDIT_CARD ("Credit Card Payoff"), LOAN ("Loan"), MORTGAGE("Monthly Mortgage"), ROI("Return on Investment"), TVM("Time Value of Money (Nest Egg)"), TIP("Tip");
 
   private String name;
 

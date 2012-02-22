@@ -40,7 +40,8 @@
 		android:text="Amount Returned ($)"
 		android:id="@+id/textView3"
 		android:layout_width="wrap_content"
-		android:layout_height="wrap_content">
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp">
 	</TextView>
 	<EditText
 		android:layout_width="fill_parent"

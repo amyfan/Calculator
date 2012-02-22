@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    <ScrollView
+    	android:id="@+id/scrollView1"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+        <LinearLayout
+        	android:id="@+id/linearLayout1"
+        	android:orientation="vertical"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent">
+
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/tableLayout0">
+		<TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+			<TextView
+				android:text="Credit Card Balance ($)"
+				android:id="@+id/textView0"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<TextView
+				android:text="Interest Rate (%)"
+				android:id="@+id/textView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp">
+			</TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow7" android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<EditText
+				android:layout_width="fill_parent"
+				android:id="@+id/editTextBalance"
+				android:layout_height="wrap_content"
+				android:inputType="phone">
+			</EditText>
+			<EditText
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/editTextInterest"
+				android:inputType="phone"
+				android:layout_marginLeft="10dp">
+			</EditText>
+		</TableRow>
+	</TableLayout>
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/tableLayout1">
+		<TableRow android:id="@+id/tableRow21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+			<TextView
+				android:text="Payment Per Month ($)"
+				android:id="@+id/textView21"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<TextView
+				android:text="OR"
+				android:id="@+id/textView22"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp">
+			</TextView>
+			<TextView
+				android:text="# Months Left"
+				android:id="@+id/textView23"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp">
+			</TextView>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow22" android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<EditText
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/editTextPayment"
+				android:inputType="phone">
+			</EditText>
+			<TextView
+				android:text=""
+				android:id="@+id/textView24"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<EditText
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="12"
+				android:id="@+id/editTextMonths"
+				android:inputType="phone"
+				android:layout_marginLeft="10dp">
+			</EditText>	    
+		</TableRow>
+	</TableLayout>
+	<TableLayout
+		android:layout_height="wrap_content"
+		android:id="@+id/tableLayout1"
+		android:layout_width="fill_parent">
+		<TableRow
+			android:layout_width="wrap_content"
+			android:id="@+id/tableRow1"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+			<Button android:id="@+id/calculateButton"
+				android:layout_width="wrap_content" android:text="Calculate"
+				android:layout_height="wrap_content"></Button>
+			<Button android:id="@+id/clearButton" android:layout_width="wrap_content"
+				android:text="Clear" android:layout_height="wrap_content"></Button>
+		</TableRow>
+	</TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

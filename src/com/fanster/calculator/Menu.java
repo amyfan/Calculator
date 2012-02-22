@@ -34,14 +34,16 @@ public class Menu extends ListActivity {
   private Class<?> getCalculatorClass(String calculatorType) {
     if (calculatorType != null) {
       switch (CalculatorType.fromValue(calculatorType)) {
+      case CREDIT_CARD:
+        return CreditCalculator.class;
       case MORTGAGE:
         return MortgageCalculator.class;
       case ROI:
         return ROICalculator.class;
-      case TIP:
-        return TipCalculator.class;
       case TVM:
         return TVMCalculator.class;
+      case TIP:
+        return TipCalculator.class;
       }
 
     }

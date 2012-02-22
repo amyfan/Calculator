@@ -1,7 +1,6 @@
 package com.fanster.calculator;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 import android.app.Activity;
 import android.os.Bundle;
