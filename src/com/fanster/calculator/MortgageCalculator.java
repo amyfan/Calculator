@@ -51,10 +51,10 @@ public class MortgageCalculator extends Activity {
     calculateButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         try {
-          if (editTextPrice.getText() != null && editTextDownPayment.getText() != null
-              && editTextYears.getText() != null && editTextInterest.getText() != null
-              && editTextPropertyTax.getText() != null && editTextAppraised.getText() != null
-              && editTextInsurance.getText() != null) {
+          if (StringUtils.notEmpty(editTextPrice.getText().toString()) && StringUtils.notEmpty(editTextDownPayment.getText().toString())
+              && StringUtils.notEmpty(editTextYears.getText().toString()) && StringUtils.notEmpty(editTextInterest.getText().toString())
+              && StringUtils.notEmpty(editTextPropertyTax.getText().toString()) && StringUtils.notEmpty(editTextAppraised.getText().toString())
+              && StringUtils.notEmpty(editTextInsurance.getText().toString())) {
             BigDecimal price = new BigDecimal(editTextPrice.getText().toString());
             BigDecimal downPaymentPercent = new BigDecimal(editTextDownPayment.getText().toString());
             Integer years = new Integer(editTextYears.getText().toString());

@@ -47,7 +47,7 @@ public class TipCalculator extends Activity {
     incTipButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         try {
-          if (editTextTip.getText() != null) {
+          if (StringUtils.notEmpty(editTextTip.getText().toString())) {
             Integer tip = new Integer(editTextTip.getText().toString());
             tip += 1;
             editTextTip.setText(tip.toString());
@@ -62,7 +62,7 @@ public class TipCalculator extends Activity {
     decTipButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         try {
-          if (editTextTip.getText() != null) {
+          if (StringUtils.notEmpty(editTextTip.getText().toString())) {
             Integer tip = new Integer(editTextTip.getText().toString());
             if (tip > 0) {
               tip -= 1;
@@ -79,7 +79,7 @@ public class TipCalculator extends Activity {
     incSplitButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         try {
-          if (editTextSplit.getText() != null) {
+          if (StringUtils.notEmpty(editTextSplit.getText().toString())) {
             Integer tip = new Integer(editTextSplit.getText().toString());
             tip += 1;
             editTextSplit.setText(tip.toString());
@@ -94,7 +94,7 @@ public class TipCalculator extends Activity {
     decSplitButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         try {
-          if (editTextSplit.getText() != null) {
+          if (StringUtils.notEmpty(editTextSplit.getText().toString())) {
             Integer tip = new Integer(editTextSplit.getText().toString());
             if (tip > 1) {
               tip -= 1;
@@ -111,8 +111,8 @@ public class TipCalculator extends Activity {
     calculateButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         try {
-          if (editTextBill.getText() != null && editTextTax.getText() != null
-              && editTextTip.getText() != null && editTextTotal.getText() != null) {
+          if (StringUtils.notEmpty(editTextBill.getText().toString()) && StringUtils.notEmpty(editTextTax.getText().toString())
+              && StringUtils.notEmpty(editTextTip.getText().toString()) && StringUtils.notEmpty(editTextTotal.getText().toString())) {
             BigDecimal bill = new BigDecimal(editTextBill.getText().toString());
             BigDecimal tax = new BigDecimal(editTextTax.getText().toString());
             BigDecimal taxPercent = MathUtils.divide(tax, BigDecimal.valueOf(100));

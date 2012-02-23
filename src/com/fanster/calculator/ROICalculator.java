@@ -50,7 +50,8 @@ public class ROICalculator extends Activity {
     calculateButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         try {
-          if (editTextInvestment.getText() != null && editTextReturn.getText() != null
+          if (StringUtils.notEmpty(editTextInvestment.getText().toString())
+              && StringUtils.notEmpty(editTextReturn.getText().toString())
               && datePickerStart.getYear() > 0 && datePickerStart.getMonth() > 0
               && datePickerStart.getDayOfMonth() > 0 && datePickerEnd.getYear() > 0
               && datePickerEnd.getMonth() > 0 && datePickerEnd.getDayOfMonth() > 0) {

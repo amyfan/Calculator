@@ -43,8 +43,9 @@ public class TVMCalculator extends Activity {
     calculateButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         try {
-          if (editTextPrincipal.getText() != null && editTextAnnuity.getText() != null
-              && editTextYears.getText() != null && editTextInterest.getText() != null) {
+          if (StringUtils.notEmpty(editTextPrincipal.getText().toString()) && StringUtils.notEmpty(editTextAnnuity.getText().toString())
+              && StringUtils.notEmpty(editTextYears.getText().toString())
+              && StringUtils.notEmpty(editTextInterest.getText().toString())) {
             BigDecimal principal = new BigDecimal(editTextPrincipal.getText().toString());
             BigDecimal annuity = new BigDecimal(editTextAnnuity.getText().toString());
             Integer years = new Integer(editTextYears.getText().toString());

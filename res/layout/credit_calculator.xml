@@ -11,7 +11,7 @@
         	android:id="@+id/linearLayout1"
         	android:orientation="vertical"
         	android:layout_width="fill_parent"
-        	android:layout_height="fill_parent">
+        	android:layout_height="wrap_content">
 
 	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/tableLayout0">
 		<TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
@@ -84,7 +84,6 @@
 			<EditText
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"
-				android:text="12"
 				android:id="@+id/editTextMonths"
 				android:inputType="phone"
 				android:layout_marginLeft="10dp">
@@ -93,7 +92,7 @@
 	</TableLayout>
 	<TableLayout
 		android:layout_height="wrap_content"
-		android:id="@+id/tableLayout1"
+		android:id="@+id/tableLayout2"
 		android:layout_width="fill_parent">
 		<TableRow
 			android:layout_width="wrap_content"
