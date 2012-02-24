@@ -18,20 +18,24 @@
                   android:label="Credit Card Payoff Calculator">
         </activity>
             
+  	  	<activity android:name="MortgageCalculator"
+                  android:label="Mortgage Calculator">
+        </activity>
+  	  	
+  	  	<activity android:name="ROICalculator"
+                  android:label="ROI Calculator">
+        </activity>
+  	  	
   	  	<activity android:name="TVMCalculator"
                   android:label="Nest Egg Calculator">
         </activity>
 
-  	  	<activity android:name="ROICalculator"
-                  android:label="ROI Calculator">
+  	  	<activity android:name="RetirementCalculator"
+                  android:label="Nest Egg Calculator">
         </activity>
-
+  	  	
   	  	<activity android:name="TipCalculator"
                   android:label="Tip Calculator">
-        </activity>
-
-  	  	<activity android:name="MortgageCalculator"
-                  android:label="Mortgage Calculator">
         </activity>
 
     </application>

@@ -118,6 +118,8 @@ public class ROICalculator extends Activity {
     clearButton = (Button) findViewById(R.id.clearButton);
     clearButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
+        editTextInvestment.setText("");
+        editTextReturn.setText("");
         editTextGain.setText("");
         editTextROI.setText("");
         editTextAnnualized.setText("");

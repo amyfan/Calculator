@@ -111,8 +111,10 @@ public class TipCalculator extends Activity {
     calculateButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         try {
-          if (StringUtils.notEmpty(editTextBill.getText().toString()) && StringUtils.notEmpty(editTextTax.getText().toString())
-              && StringUtils.notEmpty(editTextTip.getText().toString()) && StringUtils.notEmpty(editTextTotal.getText().toString())) {
+          if (StringUtils.notEmpty(editTextBill.getText().toString())
+              && StringUtils.notEmpty(editTextTax.getText().toString())
+              && StringUtils.notEmpty(editTextTip.getText().toString())
+              && StringUtils.notEmpty(editTextTotal.getText().toString())) {
             BigDecimal bill = new BigDecimal(editTextBill.getText().toString());
             BigDecimal tax = new BigDecimal(editTextTax.getText().toString());
             BigDecimal taxPercent = MathUtils.divide(tax, BigDecimal.valueOf(100));
@@ -140,6 +142,10 @@ public class TipCalculator extends Activity {
     clearButton = (Button) findViewById(R.id.clearButton);
     clearButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
+        editTextBill.setText("");
+        editTextTax.setText("");
+        editTextTip.setText("");
+        editTextSplit.setText("");
         editTextTotal.setText("");
       }
     });

@@ -42,6 +42,8 @@ public class Menu extends ListActivity {
         return ROICalculator.class;
       case TVM:
         return TVMCalculator.class;
+      case RETIREMENT:
+        return RetirementCalculator.class;
       case TIP:
         return TipCalculator.class;
       }

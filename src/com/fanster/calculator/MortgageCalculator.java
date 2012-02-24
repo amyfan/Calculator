@@ -99,6 +99,13 @@ public class MortgageCalculator extends Activity {
     clearButton = (Button) findViewById(R.id.clearButton);
     clearButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
+        editTextPrice.setText("");
+        editTextDownPayment.setText("");
+        editTextYears.setText("");
+        editTextInterest.setText("");
+        editTextPropertyTax.setText("");
+        editTextAppraised.setText("");
+        editTextInsurance.setText("");
         editTextTotal.setText("");
       }
     });
