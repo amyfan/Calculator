@@ -114,7 +114,7 @@ public class TipCalculator extends Activity {
           if (StringUtils.notEmpty(editTextBill.getText().toString())
               && StringUtils.notEmpty(editTextTax.getText().toString())
               && StringUtils.notEmpty(editTextTip.getText().toString())
-              && StringUtils.notEmpty(editTextTotal.getText().toString())) {
+              && StringUtils.notEmpty(editTextSplit.getText().toString())) {
             BigDecimal bill = new BigDecimal(editTextBill.getText().toString());
             BigDecimal tax = new BigDecimal(editTextTax.getText().toString());
             BigDecimal taxPercent = MathUtils.divide(tax, BigDecimal.valueOf(100));
