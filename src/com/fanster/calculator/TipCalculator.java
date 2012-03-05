@@ -143,9 +143,9 @@ public class TipCalculator extends Activity {
     clearButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         editTextBill.setText("");
-        editTextTax.setText("");
-        editTextTip.setText("");
-        editTextSplit.setText("");
+        editTextTax.setText("8.75");
+        editTextTip.setText("18");
+        editTextSplit.setText("1");
         editTextTotal.setText("");
       }
     });
